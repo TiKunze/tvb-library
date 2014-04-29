@@ -1,0 +1,37 @@
+Add repository
+	- add repository manually at the github homepage
+
+
+Commit something
+	$ git add README		--> Stages your file, adding it to the list of files to be committed
+	$ git commit -m 'comment'	--> Commits your files, adding the message "commit"
+
+
+Push commit
+	$ git remote add origin https://github.com/TiKunze/Hello-World.git  	--> Creates a remote named "origin" pointing at your GitHub repository
+	$ git push origin master		--> Sends your commits in the "master" branch to GitHub
+
+
+Fork a repository
+	- Fork a project at the GitHub website
+	
+	- Clone your fork
+		$ git clone https://github.com/TiKunze/Spoon-Knife.git   --> Clones your fork of the repository into the current directory in terminal
+	
+	- Configure remotes (default remote is 'origin', original repository needs to be named 'upstream'
+		$ cd Spoon-Knife 
+		$ git remote add upstream https://github.com/octocat/Spoon-Knife.git ---> Assigns the original repository to a remote called "upstream"
+		$ git fetch upstream		--> Pulls in changes not present in your local repository, without modifying your files
+
+
+Push Commits
+	$ git push origin master	--> Pushes commits to your remote repository stored on GitHub
+
+
+Pull in upstream changes (add updates to your fork, push commit before)
+	$ git fetch upstream
+	$ git merge upstream/master 	--> Merges any changes fetched into your working files
+
+
+
+
